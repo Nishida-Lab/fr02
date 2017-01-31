@@ -23,14 +23,14 @@
       <collision name='collision'>
 	<geometry>
 	  <mesh>
-	    <uri>model://fr02/mesh/gear_and_box.stl</uri>
+	    <uri>model://fr02_description/models/mesh/gear_and_box.stl</uri>
 	  </mesh>
 	</geometry>
       </collision>
       <visual name='visual'>
 	<geometry>
 	  <mesh>
-	    <uri>model://fr02/mesh/gear_and_box.stl</uri>
+	    <uri>model://fr02_description/models/mesh/gear_and_box.stl</uri>
 	  </mesh>
 	</geometry>
       </visual>
@@ -52,14 +52,14 @@
       <collision name='collision'>
 	<geometry>
 	  <mesh>
-	    <uri>model://fr02/mesh/rocker_right_link.stl</uri>
+	    <uri>model://fr02_description/models/mesh/rocker_right_link.stl</uri>
 	  </mesh>
 	</geometry>
       </collision>
       <visual name='visual'>
 	<geometry>
 	  <mesh>
-	    <uri>model://fr02/mesh/rocker_right_link.stl</uri>
+	    <uri>model://fr02_description/models/mesh/rocker_right_link.stl</uri>
 	  </mesh>
 	</geometry>
       </visual>
@@ -81,14 +81,14 @@
       <collision name='collision'>
 	<geometry>
 	  <mesh>
-	    <uri>model://fr02/mesh/rocker_left_link.stl</uri>
+	    <uri>model://fr02_description/models/mesh/rocker_left_link.stl</uri>
 	  </mesh>
 	</geometry>
       </collision>
       <visual name='visual'>
 	<geometry>
 	  <mesh>
-	    <uri>model://fr02/mesh/rocker_left_link.stl</uri>
+	    <uri>model://fr02_description/models/mesh/rocker_left_link.stl</uri>
 	  </mesh>
 	</geometry>
       </visual>
@@ -110,14 +110,14 @@
       <collision name='collision'>
 	<geometry>
 	  <mesh>
-	    <uri>model://fr02/mesh/bogie_right_link.stl</uri>
+	    <uri>model://fr02_description/models/mesh/bogie_right_link.stl</uri>
 	  </mesh>
 	</geometry>
       </collision>
       <visual name='visual'>
 	<geometry>
 	  <mesh>
-	    <uri>model://fr02/mesh/bogie_right_link.stl</uri>
+	    <uri>model://fr02_description/models/mesh/bogie_right_link.stl</uri>
 	  </mesh>
 	</geometry>
       </visual>
@@ -139,14 +139,14 @@
       <collision name='collision'>
 	<geometry>
 	  <mesh>
-	    <uri>model://fr02/mesh/bogie_left_link.stl</uri>
+	    <uri>model://fr02_description/models/mesh/bogie_left_link.stl</uri>
 	  </mesh>
 	</geometry>
       </collision>
       <visual name='visual'>
 	<geometry>
 	  <mesh>
-	    <uri>model://fr02/mesh/bogie_left_link.stl</uri>
+	    <uri>model://fr02_description/models/mesh/bogie_left_link.stl</uri>
 	  </mesh>
 	</geometry>
       </visual>
@@ -168,14 +168,14 @@
       <collision name='collision'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/steer_right_front_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/steer_right_front_link.stl</uri>
     	  </mesh>
     	</geometry>
       </collision>
       <visual name='visual'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/steer_right_front_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/steer_right_front_link.stl</uri>
     	  </mesh>
     	</geometry>
       </visual>
@@ -197,14 +197,14 @@
       <collision name='collision'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/steer_left_front_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/steer_left_front_link.stl</uri>
     	  </mesh>
     	</geometry>
       </collision>
       <visual name='visual'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/steer_left_front_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/steer_left_front_link.stl</uri>
     	  </mesh>
     	</geometry>
       </visual>
@@ -226,14 +226,14 @@
       <collision name='collision'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/steer_right_back_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/steer_right_back_link.stl</uri>
     	  </mesh>
     	</geometry>
       </collision>
       <visual name='visual'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/steer_right_back_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/steer_right_back_link.stl</uri>
     	  </mesh>
     	</geometry>
       </visual>
@@ -255,14 +255,14 @@
       <collision name='collision'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/steer_left_back_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/steer_left_back_link.stl</uri>
     	  </mesh>
     	</geometry>
       </collision>
       <visual name='visual'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/steer_left_back_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/steer_left_back_link.stl</uri>
     	  </mesh>
     	</geometry>
       </visual>
@@ -284,14 +284,14 @@
       <collision name='collision'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/wheel_right_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/wheel_right_link.stl</uri>
     	  </mesh>
     	</geometry>
       </collision>
       <visual name='visual'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/wheel_right_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/wheel_right_link.stl</uri>
     	  </mesh>
     	</geometry>
       </visual>
@@ -313,14 +313,14 @@
       <collision name='collision'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/wheel_left_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/wheel_left_link.stl</uri>
     	  </mesh>
     	</geometry>
       </collision>
       <visual name='visual'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/wheel_left_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/wheel_left_link.stl</uri>
     	  </mesh>
     	</geometry>
       </visual>
@@ -342,14 +342,14 @@
       <collision name='collision'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/wheel_right_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/wheel_right_link.stl</uri>
     	  </mesh>
     	</geometry>
       </collision>
       <visual name='visual'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/wheel_right_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/wheel_right_link.stl</uri>
     	  </mesh>
     	</geometry>
       </visual>
@@ -371,14 +371,14 @@
       <collision name='collision'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/wheel_left_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/wheel_left_link.stl</uri>
     	  </mesh>
     	</geometry>
       </collision>
       <visual name='visual'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/wheel_left_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/wheel_left_link.stl</uri>
     	  </mesh>
     	</geometry>
       </visual>
@@ -400,14 +400,14 @@
       <collision name='collision'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/wheel_right_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/wheel_right_link.stl</uri>
     	  </mesh>
     	</geometry>
       </collision>
       <visual name='visual'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/wheel_right_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/wheel_right_link.stl</uri>
     	  </mesh>
     	</geometry>
       </visual>
@@ -429,14 +429,14 @@
       <collision name='collision'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/wheel_left_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/wheel_left_link.stl</uri>
     	  </mesh>
     	</geometry>
       </collision>
       <visual name='visual'>
     	<geometry>
     	  <mesh>
-    	    <uri>model://fr02/mesh/wheel_left_link.stl</uri>
+    	    <uri>model://fr02_description/models/mesh/wheel_left_link.stl</uri>
     	  </mesh>
     	</geometry>
       </visual>

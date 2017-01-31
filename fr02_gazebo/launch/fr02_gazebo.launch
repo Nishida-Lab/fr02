@@ -19,7 +19,7 @@
     <arg name="world_name" value="$(find fr01_gazebo)/worlds/fr01_empty_world.world"/>
 </include>
 
-<param name="robot_description_sdf" textfile="$(find fr02_gazebo)/sdf/fr02.sdf" />
+<param name="robot_description_sdf" textfile="$(find fr02_description)/models/fr02.sdf" />
 
 <node name="spawn_model" pkg="gazebo_ros" type="spawn_model"
       args="-sdf -param robot_description_sdf -model fr02"
