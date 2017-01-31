@@ -1,0 +1,65 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name="fr02">
+    <static>false</static>
+    <link name='base_footprint'>
+      <pose>0 0 0 0 0 0</pose>
+    </link>
+
+    <link name='base_stabilized'>
+      <pose>0 0 0.37 0 0 0</pose>
+    </link>
+    
+    <link name='base_link'>
+      <collision name='collision'>
+	<geometry>
+	  <mesh>
+	    <uri>./mesh/gear_and_box.stl</uri>
+	  </mesh>
+	</geometry>
+      </collision>
+      <visual name='visual'>
+	<geometry>
+	  <mesh>
+	    <uri>./mesh/gear_and_box.stl</uri>
+	  </mesh>
+	</geometry>
+      </visual>
+    </link>
+
+    <link name='rocker_right_link'>
+      <collision name='collision'>
+	<geometry>
+	  <mesh>
+	    <uri>./mesh/gear_and_box.stl</uri>
+	  </mesh>
+	</geometry>
+      </collision>
+      <visual name='visual'>
+	<geometry>
+	  <mesh>
+	    <uri>./mesh/gear_and_box.stl</uri>
+	  </mesh>
+	</geometry>
+      </visual>
+    </link>
+
+    <link name='rocker_left_link'>
+      <collision name='collision'>
+	<geometry>
+	  <mesh>
+	    <uri>./mesh/gear_and_box.stl</uri>
+	  </mesh>
+	</geometry>
+      </collision>
+      <visual name='visual'>
+	<geometry>
+	  <mesh>
+	    <uri>./mesh/gear_and_box.stl</uri>
+	  </mesh>
+	</geometry>
+      </visual>
+    </link>
+    
+  </model>
+</sdf>

@@ -1,0 +1,29 @@
+<launch>
+
+<arg name="model" default="$(find fr02_description)/robots/fr02.urdf.xacro"/>
+<arg name="gui" default="True" />
+<param name="robot_description" command="$(find xacro)/xacro.py '$(arg model)'"/>
+
+<!-- <rosparam file="$(find rmc_simulation)/gazebo_config/control/surus_control.yaml" command="load"/> -->
+<rosparam file="$(find fr01_control)/config/fr01_rocker_bogie_controller.yaml" command="load"/> 
+
+<node name="controller_spawner" pkg="controller_manager"
+      type="spawner" respawn="false"
+      output="screen"
+      args="fr01_rocker_bogie_controller joint_state_controller"/>
+
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+      respawn="false" output="screen"/>
+
+<include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find fr01_gazebo)/worlds/fr01_empty_world.world"/>
+</include>
+
+<param name="robot_description_sdf" textfile="$(find fr02_gazebo)/sdf/fr02.sdf" />
+
+<node name="spawn_model" pkg="gazebo_ros" type="spawn_model"
+      args="-sdf -param robot_description_sdf -model fr02"
+      output="screen">
+</node>
+
+</launch>

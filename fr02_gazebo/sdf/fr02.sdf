@@ -1,0 +1,572 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name="fr02">
+    <static>false</static>
+    <pose>0 0 0.5 0 0 0</pose>
+
+    <link name='base_footprint'>
+      <pose>0 0 0 0 0 0</pose>
+    </link>
+    
+    <link name='base_link'>
+      <inertial>
+	<mass>5.57</mass>
+	<inertia>
+	  <ixx>10.106</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.001</ixz>
+          <iyy>10.165</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.184</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+	<geometry>
+	  <mesh>
+	    <uri>model://fr02/mesh/gear_and_box.stl</uri>
+	  </mesh>
+	</geometry>
+      </collision>
+      <visual name='visual'>
+	<geometry>
+	  <mesh>
+	    <uri>model://fr02/mesh/gear_and_box.stl</uri>
+	  </mesh>
+	</geometry>
+      </visual>
+    </link>
+
+    <link name='rocker_right_link'>
+      <pose>0 -0.177 0 0 0 0</pose>
+      <inertial>
+	<mass>2.549</mass>
+	<inertia>
+	  <ixx>0.049</ixx>
+          <ixy>-0.043</ixy>
+          <ixz>-0.059</ixz>
+          <iyy>0.213</iyy>
+          <iyz>-0.017</iyz>
+          <izz>0.195</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+	<geometry>
+	  <mesh>
+	    <uri>model://fr02/mesh/rocker_right_link.stl</uri>
+	  </mesh>
+	</geometry>
+      </collision>
+      <visual name='visual'>
+	<geometry>
+	  <mesh>
+	    <uri>model://fr02/mesh/rocker_right_link.stl</uri>
+	  </mesh>
+	</geometry>
+      </visual>
+    </link>
+
+    <link name='rocker_left_link'>
+      <pose>0 0.177 0 0 0 0</pose>
+      <inertial>
+      	<mass>2.549</mass>
+	<inertia>
+	  <ixx>0.049</ixx>
+          <ixy>0.043</ixy>
+          <ixz>-0.059</ixz>
+          <iyy>0.213</iyy>
+          <iyz>0.017</iyz>
+          <izz>0.195</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+	<geometry>
+	  <mesh>
+	    <uri>model://fr02/mesh/rocker_left_link.stl</uri>
+	  </mesh>
+	</geometry>
+      </collision>
+      <visual name='visual'>
+	<geometry>
+	  <mesh>
+	    <uri>model://fr02/mesh/rocker_left_link.stl</uri>
+	  </mesh>
+	</geometry>
+      </visual>
+    </link>
+
+    <link name='bogie_right_link'>
+      <pose>0.17 -0.217 -0.15 0 0 0 </pose>
+      <inertial>
+      	<mass>5.523</mass>
+	<inertia>
+	  <ixx>0.17</ixx>
+          <ixy>-0.04</ixy>
+          <ixz>-0.119</ixz>
+          <iyy>0.269</iyy>
+          <iyz>-0.046</iyz>
+          <izz>0.212</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+	<geometry>
+	  <mesh>
+	    <uri>model://fr02/mesh/bogie_right_link.stl</uri>
+	  </mesh>
+	</geometry>
+      </collision>
+      <visual name='visual'>
+	<geometry>
+	  <mesh>
+	    <uri>model://fr02/mesh/bogie_right_link.stl</uri>
+	  </mesh>
+	</geometry>
+      </visual>
+    </link>
+    
+    <link name='bogie_left_link'>
+      <pose>0.17 0.217 -0.15 0 0 0 </pose>
+      <inertial>
+      	<mass>5.523</mass>
+	<inertia>
+	  <ixx>0.17</ixx>
+          <ixy>0.04</ixy>
+          <ixz>-0.119</ixz>
+          <iyy>0.269</iyy>
+          <iyz>0.046</iyz>
+          <izz>0.212</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+	<geometry>
+	  <mesh>
+	    <uri>model://fr02/mesh/bogie_left_link.stl</uri>
+	  </mesh>
+	</geometry>
+      </collision>
+      <visual name='visual'>
+	<geometry>
+	  <mesh>
+	    <uri>model://fr02/mesh/bogie_left_link.stl</uri>
+	  </mesh>
+	</geometry>
+      </visual>
+    </link>
+
+    <link name='steer_right_front_link'>
+      <pose>0.34 -0.298 -0.095 0 0 0 </pose>
+      <inertial>
+      	<mass>4.199</mass>
+	<inertia>
+	  <ixx>0.227</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.194</iyy>
+          <iyz>0.054</iyz>
+          <izz>0.04</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/steer_right_front_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </collision>
+      <visual name='visual'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/steer_right_front_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </visual>
+    </link>
+    
+    <link name='steer_left_front_link'>
+      <pose>0.34 0.298 -0.095 0 0 0 </pose>
+      <inertial>
+      	<mass>4.199</mass>
+	<inertia>
+	  <ixx>0.227</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.194</iyy>
+          <iyz>-0.054</iyz>
+          <izz>0.04</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/steer_left_front_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </collision>
+      <visual name='visual'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/steer_left_front_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </visual>
+    </link>
+
+    <link name='steer_right_back_link'>
+      <pose>-0.34 -0.298 -0.095 0 0 0 </pose>
+      <inertial>
+      	<mass>4.199</mass>
+	<inertia>
+	  <ixx>0.227</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.194</iyy>
+          <iyz>0.054</iyz>
+          <izz>0.04</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/steer_right_back_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </collision>
+      <visual name='visual'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/steer_right_back_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </visual>
+    </link>
+    
+    <link name='steer_left_back_link'>
+      <pose>-0.34 0.298 -0.095 0 0 0 </pose>
+      <inertial>
+      	<mass>4.199</mass>
+	<inertia>
+	  <ixx>0.227</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.194</iyy>
+          <iyz>-0.054</iyz>
+          <izz>0.04</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/steer_left_back_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </collision>
+      <visual name='visual'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/steer_left_back_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </visual>
+    </link>
+
+    <link name='wheel_right_front_link'>
+      <pose>0.34 -0.362 -0.315 0 0 0 </pose>
+      <inertial>
+	<mass>1.915</mass>
+	<inertia>
+	  <ixx>0.013</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.013</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/wheel_right_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </collision>
+      <visual name='visual'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/wheel_right_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </visual>
+    </link>
+    
+    <link name='wheel_left_front_link'>
+      <pose>0.34 0.363 -0.315 0 0 0 </pose>
+      <inertial>
+	<mass>1.915</mass>
+	<inertia>
+	  <ixx>0.013</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.013</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/wheel_left_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </collision>
+      <visual name='visual'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/wheel_left_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </visual>
+    </link>
+
+    <link name='wheel_right_back_link'>
+      <pose>-0.34 -0.362 -0.315 0 0 0 </pose>
+      <inertial>
+	<mass>1.915</mass>
+	<inertia>
+	  <ixx>0.013</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.013</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/wheel_right_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </collision>
+      <visual name='visual'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/wheel_right_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </visual>
+    </link>
+    
+    <link name='wheel_left_back_link'>
+      <pose>-0.34 0.348 -0.315 0 0 0 </pose>
+      <inertial>
+	<mass>1.915</mass>
+	<inertia>
+	  <ixx>0.013</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.013</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/wheel_left_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </collision>
+      <visual name='visual'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/wheel_left_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </visual>
+    </link>
+
+    <link name='wheel_right_middle_link'>
+      <pose>0 -0.428 -0.315 0 0 0 </pose>
+      <inertial>
+	<mass>1.915</mass>
+	<inertia>
+	  <ixx>0.013</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.013</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/wheel_right_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </collision>
+      <visual name='visual'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/wheel_right_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </visual>
+    </link>
+    
+    <link name='wheel_left_middle_link'>
+      <pose>0 0.429 -0.315 0 0 0 </pose>
+      <inertial>
+	<mass>1.915</mass>
+	<inertia>
+	  <ixx>0.013</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.013</izz>
+	</inertia>
+      </inertial>
+      <collision name='collision'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/wheel_left_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </collision>
+      <visual name='visual'>
+    	<geometry>
+    	  <mesh>
+    	    <uri>model://fr02/mesh/wheel_left_link.stl</uri>
+    	  </mesh>
+    	</geometry>
+      </visual>
+    </link>
+
+    <joint type="revolute" name="base_link_joint">
+      <child>base_link</child>
+      <parent>base_footprint</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+	<limit>
+	  <lower>0</lower>
+	  <upper>0</upper>
+	</limit>
+      </axis>
+      
+    </joint>
+    
+    <joint type="revolute" name="rocker_right_joint">
+      <child>rocker_right_link</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+      </axis>
+    </joint>
+
+    <joint type="revolute" name="rocker_left_joint">
+      <child>rocker_left_link</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+      </axis>
+    </joint>
+
+     <joint type="revolute" name="bogie_right_joint">
+       <child>bogie_right_link</child>
+       <parent>rocker_right_link</parent>
+       <axis>
+         <xyz>0 1 0</xyz>
+       </axis>
+     </joint>
+
+     <joint type="revolute" name="bogie_left_joint">
+       <child>bogie_left_link</child>
+       <parent>rocker_left_link</parent>
+       <axis>
+         <xyz>0 1 0</xyz>
+       </axis>
+     </joint>
+
+     <joint type="revolute" name="steer_right_front_joint">
+       <child>steer_right_front_link</child>
+       <parent>bogie_right_link</parent>
+       <axis>
+         <xyz>0 0 1</xyz>
+       </axis>
+     </joint>
+
+     <joint type="revolute" name="steer_left_front_joint">
+       <child>steer_left_front_link</child>
+       <parent>bogie_left_link</parent>
+       <axis>
+          <xyz>0 0 1</xyz>
+       </axis>
+     </joint>
+
+     <joint type="revolute" name="steer_right_back_joint">
+       <child>steer_right_back_link</child>
+       <parent>rocker_right_link</parent>
+       <axis>
+          <xyz>0 0 1</xyz>
+       </axis>
+     </joint>
+
+     <joint type="revolute" name="steer_left_back_joint">
+       <child>steer_left_back_link</child>
+       <parent>rocker_left_link</parent>
+       <axis>
+          <xyz>0 0 1</xyz>
+       </axis>
+     </joint>
+
+     <joint type="revolute" name="wheel_right_front_joint">
+       <child>wheel_right_front_link</child>
+       <parent>steer_right_front_link</parent>
+       <axis>
+         <xyz>0 1 0</xyz>
+       </axis>
+     </joint>
+
+     <joint type="revolute" name="wheel_left_front_joint">
+       <child>wheel_left_front_link</child>
+       <parent>steer_left_front_link</parent>
+       <axis>
+         <xyz>0 1 0</xyz>
+       </axis>
+     </joint>
+
+     <joint type="revolute" name="wheel_right_back_joint">
+       <child>wheel_right_back_link</child>
+       <parent>steer_right_back_link</parent>
+       <axis>
+         <xyz>0 1 0</xyz>
+       </axis>
+     </joint>
+
+     <joint type="revolute" name="wheel_left_back_joint">
+       <child>wheel_left_back_link</child>
+       <parent>steer_left_back_link</parent>
+       <axis>
+         <xyz>0 1 0</xyz>
+       </axis>
+     </joint>
+
+     <joint type="revolute" name="wheel_right_middle_joint">
+       <child>wheel_right_middle_link</child>
+       <parent>bogie_right_link</parent>
+       <axis>
+         <xyz>0 1 0</xyz>
+       </axis>
+     </joint>
+
+     <joint type="revolute" name="wheel_left_middle_joint">
+       <child>wheel_left_middle_link</child>
+       <parent>bogie_left_link</parent>
+       <axis>
+         <xyz>0 1 0</xyz>
+       </axis>
+     </joint>
+     
+     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"/>
+  </model>
+</sdf>

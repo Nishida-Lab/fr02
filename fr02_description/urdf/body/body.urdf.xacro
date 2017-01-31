@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find fr02_description)/urdf/body/body.transmission.xacro"/>
+  <xacro:include filename="$(find fr02_description)/urdf/body/body.gazebo.xacro"/>
+  
+  <xacro:macro name="base_link_v0" params="parent *link_origin *joint_origin *joint_axis">
+    <joint name="base_link_joint" type="continuous">
+      <insert_block name="joint_origin" />
+      <parent link="${parent}"/>
+      <child link="base_link"/>
+      <insert_block name="joint_axis"/>
+    </joint>
+    
+    <link name="base_link">
+      <visual>
+	<insert_block name="link_origin"/>
+        <geometry>
+          <mesh filename="package://fr02_description/meshes/visual/gear_and_box.stl"/>
+        </geometry>
+      </visual>
+      <collision>
+	<insert_block name="link_origin"/>
+        <geometry>
+	  <mesh filename="package://fr02_description/meshes/collision/gear_and_box.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="6.441"/>
+        <inertia ixx="0.004" ixy="0.0" ixz="0.0"
+		 iyy="0.002" iyz="0.0"
+		 izz="0.005" />
+      </inertial>
+    </link>
+  </xacro:macro>
+
+  <xacro:macro name="base_stabilized_v0" params="parent *link_origin *joint_origin">
+    <joint name="base_stabilized_joint" type="fixed">
+      <insert_block name="joint_origin" />
+      <parent link="${parent}"/>
+      <child link="base_stabilized"/>
+    </joint>
+    <link name="base_stabilized">
+      <collision>
+	<insert_block name="link_origin"/>
+	<visual/>
+        <geometry>
+	  <mesh filename="package://fr02_description/meshes/collision/gear_and_box.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="6.441"/>
+        <inertia ixx="0.004" ixy="0.0" ixz="0.00"
+		 iyy="0.002" iyz="0.0"
+		 izz="0.005" />
+      </inertial>
+    </link>
+  </xacro:macro>
+  
+  
+</robot>
